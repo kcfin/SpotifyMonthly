@@ -10,14 +10,14 @@
 	<string>SpotifyMonthly</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>C8BAE3D90CF6BC8695BBB22E30441696205EEDA8</key>
+		<key>B523DC099E71684851B14058E5BD028ACEBD37F9</key>
 		<string>https://github.com/kcfin/SpotifyMonthly.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>SpotifyMonthly.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>C8BAE3D90CF6BC8695BBB22E30441696205EEDA8</key>
+		<key>B523DC099E71684851B14058E5BD028ACEBD37F9</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C8BAE3D90CF6BC8695BBB22E30441696205EEDA8</string>
+	<string>B523DC099E71684851B14058E5BD028ACEBD37F9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C8BAE3D90CF6BC8695BBB22E30441696205EEDA8</string>
+			<string>B523DC099E71684851B14058E5BD028ACEBD37F9</string>
 			<key>IDESourceControlWCCName</key>
 			<string>SpotifyMonthly</string>
 		</dict>

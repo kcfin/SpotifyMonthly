@@ -31,48 +31,55 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        window = UIWindow(frame: UIScreen.mainScreen().bounds);
-        window!.makeKeyAndVisible();
+//        window = UIWindow(frame: UIScreen.mainScreen().bounds);
+//        window!.makeKeyAndVisible();
+//        
+//        let profileVC = ProfileViewController();
+//        let navVC = UINavigationController(rootViewController: profileVC);
+//        navVC.navigationBarHidden = true;
+//        navVC.navigationBar.topItem?.title = ("Spotify Monthly");
+//        
+//        window!.rootViewController = navVC;
+//        
+//        var auth = SPTAuth.defaultInstance();
+//        auth.clientID = kClientId;
+//        auth.requestedScopes = [SPTAuthStreamingScope];
+//        auth.redirectURL = NSURL(string: kCallbackURL);
+//        
+//        var loginURl = auth.loginURL;
+//        
+//        
+//        
+//        if(auth.session == nil || !auth.session.isValid()){
+//            navVC.pushViewController(LoginViewController(), animated: true);
+//        } else {
+//            SpotifyUserSingleton.user.handle(auth.session, pvc: profileVC);
+//        }
+//        
+//        return true
+//    }
+//
+//    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+//        if(SPTAuth.defaultInstance().canHandleURL(url)) {
+//            SPTAuth.defaultInstance().handleAuthCallbackWithTriggeredAuthURL(url, callback: { (error, session) -> Void in
+//                if (error != nil) {
+//                    println("*** Auth error: \(error)")
+//                    return
+//                }
+//                
+////                self.playUsingSession(session)
+//                
+//            })
+//            return true;
+//        }
+//        return false;
         
-        let profileVC = ProfileViewController();
-        let navVC = UINavigationController(rootViewController: profileVC);
-        navVC.navigationBarHidden = true;
-        navVC.navigationBar.topItem?.title = ("Spotify Monthly");
+        let homeVC = HomeViewController();
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds);
+        self.window?.rootViewController = homeVC;
+        self.window?.makeKeyAndVisible();
+        return true;
         
-        window!.rootViewController = navVC;
-        
-        var auth = SPTAuth.defaultInstance();
-        auth.clientID = kClientId;
-        auth.requestedScopes = [SPTAuthStreamingScope];
-        auth.redirectURL = NSURL(string: kCallbackURL);
-        
-        var loginURl = auth.loginURL;
-        
-        
-        
-        if(auth.session == nil || !auth.session.isValid()){
-            navVC.pushViewController(LoginViewController(), animated: true);
-        } else {
-            SpotifyUserSingleton.user.handle(auth.session, pvc: profileVC);
-        }
-        
-        return true
-    }
-
-    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
-        if(SPTAuth.defaultInstance().canHandleURL(url)) {
-            SPTAuth.defaultInstance().handleAuthCallbackWithTriggeredAuthURL(url, callback: { (error, session) -> Void in
-                if (error != nil) {
-                    println("*** Auth error: \(error)")
-                    return
-                }
-                
-//                self.playUsingSession(session)
-                
-            })
-            return true;
-        }
-        return false;
     }
     
 //    func playUsingSession(session: SPTSession) {

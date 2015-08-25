@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA5FB17D1B8BFCFB00885C40 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FB17C1B8BFCFB00885C40 /* HomeViewController.swift */; };
+		EA5FB17F1B8C021700885C40 /* PlaylistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FB17E1B8C021700885C40 /* PlaylistTableViewController.swift */; };
+		EA5FB1811B8C102400885C40 /* PlaylistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FB1801B8C102400885C40 /* PlaylistTableViewCell.swift */; };
 		EA69D60B1B7D0E1B00E02BD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA69D60A1B7D0E1B00E02BD8 /* AppDelegate.swift */; };
 		EA69D6211B7D0E1B00E02BD8 /* SpotifyMonthlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA69D6201B7D0E1B00E02BD8 /* SpotifyMonthlyTests.swift */; };
 		EA69D62C1B7D0E8400E02BD8 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA69D62B1B7D0E8400E02BD8 /* Spotify.framework */; };
 		EA69D62E1B7D0EA500E02BD8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA69D62D1B7D0EA500E02BD8 /* AVFoundation.framework */; };
 		EA69D6301B7D0EB100E02BD8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA69D62F1B7D0EB100E02BD8 /* SystemConfiguration.framework */; };
-		EA69D6361B7D2C2E00E02BD8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA69D6351B7D2C2E00E02BD8 /* ProfileViewController.swift */; };
 		EA69D63A1B7D582800E02BD8 /* SpotifyUserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA69D6391B7D582800E02BD8 /* SpotifyUserSingleton.swift */; };
 		EA69D63C1B7D72D000E02BD8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA69D63B1B7D72D000E02BD8 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA5FB17C1B8BFCFB00885C40 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EA5FB17E1B8C021700885C40 /* PlaylistTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewController.swift; sourceTree = "<group>"; };
+		EA5FB1801B8C102400885C40 /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
 		EA69D6051B7D0E1B00E02BD8 /* SpotifyMonthly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyMonthly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA69D6091B7D0E1B00E02BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA69D60A1B7D0E1B00E02BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +43,6 @@
 		EA69D62D1B7D0EA500E02BD8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		EA69D62F1B7D0EB100E02BD8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EA69D6311B7D0F4900E02BD8 /* SpotifyMonthly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpotifyMonthly-Bridging-Header.h"; sourceTree = "<group>"; };
-		EA69D6351B7D2C2E00E02BD8 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EA69D6391B7D582800E02BD8 /* SpotifyUserSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyUserSingleton.swift; sourceTree = "<group>"; };
 		EA69D63B1B7D72D000E02BD8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,10 +92,12 @@
 			isa = PBXGroup;
 			children = (
 				EA69D60A1B7D0E1B00E02BD8 /* AppDelegate.swift */,
-				EA69D6351B7D2C2E00E02BD8 /* ProfileViewController.swift */,
 				EA69D6311B7D0F4900E02BD8 /* SpotifyMonthly-Bridging-Header.h */,
 				EA69D6391B7D582800E02BD8 /* SpotifyUserSingleton.swift */,
 				EA69D63B1B7D72D000E02BD8 /* LoginViewController.swift */,
+				EA5FB17C1B8BFCFB00885C40 /* HomeViewController.swift */,
+				EA5FB17E1B8C021700885C40 /* PlaylistTableViewController.swift */,
+				EA5FB1801B8C102400885C40 /* PlaylistTableViewCell.swift */,
 			);
 			path = SpotifyMonthly;
 			sourceTree = "<group>";
@@ -230,10 +236,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA5FB17F1B8C021700885C40 /* PlaylistTableViewController.swift in Sources */,
+				EA5FB17D1B8BFCFB00885C40 /* HomeViewController.swift in Sources */,
 				EA69D63C1B7D72D000E02BD8 /* LoginViewController.swift in Sources */,
-				EA69D6361B7D2C2E00E02BD8 /* ProfileViewController.swift in Sources */,
 				EA69D60B1B7D0E1B00E02BD8 /* AppDelegate.swift in Sources */,
 				EA69D63A1B7D582800E02BD8 /* SpotifyUserSingleton.swift in Sources */,
+				EA5FB1811B8C102400885C40 /* PlaylistTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +435,7 @@
 				EA69D6261B7D0E1B00E02BD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA69D6271B7D0E1B00E02BD8 /* Build configuration list for PBXNativeTarget "SpotifyMonthlyTests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +444,7 @@
 				EA69D6291B7D0E1B00E02BD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

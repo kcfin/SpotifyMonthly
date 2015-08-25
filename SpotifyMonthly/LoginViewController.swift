@@ -69,10 +69,5 @@ class LoginViewController: UIViewController {
         
         presentViewController(authViewController!, animated: false, completion: nil);
     }
-    
-    func didLoginWithSession(session :SPTSearch) -> SPTAuthViewController {
-        
-    }
-    
-    
+   
 }
